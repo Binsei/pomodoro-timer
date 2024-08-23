@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pomo.png" type="image/png"> <!-- Add this line for favicon -->
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="session-type">
+            <p id="sessionLabel">Work Session</p>
+        </div>
+        <div class="total-time">
+            <h2>Total Time Spent</h2>
+            <span id="totalMinutes">00</span>:<span id="totalSeconds">00</span>
+        </div>
+        <div class="cycle-counter">
+            <h2>Cycle Count</h2>
+            <span id="cycleCount">0</span>
+        </div>
+    </div>
+
+    <!-- Add the audio elements here -->
+    <audio id="beepSound" src="beep.mp3"></audio>
+    <audio id="startBeep" src="start-beep.mp3"></audio>
+    <audio id="cycleBeep" src="cycle-beep.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
